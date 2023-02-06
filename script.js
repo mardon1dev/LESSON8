@@ -12,23 +12,34 @@
 // }
 
 // Arraydan faqat toq va 
-const numArr = [-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13];
+// const numArr = [-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13];
 
-function numArray(number) {
-    if (number % 2 == 1 && number >=0){
-        return number;
-    } else{
+// function numArray(number) {
+//     if (number % 2 == 1 && number >=0){
+//         return number;
+//     } else{
         
-    }
-}
+//     }
+// }
 
-for ( let i = 0; i < numArr.length; i++){
-    console.log(numArray(numArr[i]));
+// for ( let i = 0; i < numArr.length; i++){
+//     console.log(numArray(numArr[i]));
+// }
+// // Kalkulyator 
+// for (let i = 2; i <= 10; i++) {
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(`${i} * ${j} =`, i*j);
+//     }
+//     console.log(`********************`);  
+// }
+
+const years = [1985, 1995, 200, 2005, 2010];
+
+function age1 (ageYear) {
+    return 2023 - ageYear;
 }
-// Kalkulyator 
-for (let i = 2; i <= 10; i++) {
-    for (let j = 1; j <= 10; j++) {
-        console.log(`${i} * ${j} =`, i*j);
-    }
-    console.log(`********************`);  
+age1(2000)
+for (let i = 0; i < years.length; i++) {
+    const ageNum = years[i];
+    age1(ageNum);
 }

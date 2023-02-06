@@ -1,7 +1,6 @@
 .div{
     color: red;
+    width: 20px;
+    height: 20px;
 }
 
-@keyframes identifier {
-    
-}

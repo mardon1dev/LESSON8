@@ -33,13 +33,20 @@
 //     console.log(`********************`);  
 // }
 
-const years = [1985, 1995, 200, 2005, 2010];
+const yes = confirm("Tug'ilgan yilizni kiritishga rozimisiz");
+if (yes){
+    const addYear = +prompt("Tug'ilgan yilizni kiriting kiriting");
+    const years = [1985, 1995, 2000, 2005, 2010];
+    years.push(addYear);
+    function age1 (ageYear) {
+        return 2023 - ageYear;
+    }
+    for (let i = 0; i < years.length; i++) {
+        const ageNum = years[i];
+        console.log(age1(ageNum));
+    }
+}else{
+    alert("Rozi bo'lmasangiz oq yo'l")
+}
 
-function age1 (ageYear) {
-    return 2023 - ageYear;
-}
-age1(2000)
-for (let i = 0; i < years.length; i++) {
-    const ageNum = years[i];
-    age1(ageNum);
-}
+

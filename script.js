@@ -25,8 +25,5 @@ console.log(array);
 for (let i = 0; i < array.length; i++) {
     const num = array[i];
     const num2 = num * 2;
-    console.log(num2);
-    // console.log(multiplyTwo(num));
-    // const array1 = new Array(multiplyTwo(num));
-    // console.log(array1);    
+    console.log(num2);   
 }

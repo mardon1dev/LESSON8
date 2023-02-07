@@ -18,6 +18,8 @@
 const array = [1,2,3,4,5,6,7,8,9,10];
 console.log(array);
 
+const array2 = [];
+
 // function multiplyTwo(num) {
 //     return num * 2;
 // }
@@ -25,5 +27,6 @@ console.log(array);
 for (let i = 0; i < array.length; i++) {
     const num = array[i];
     const num2 = num * 2;
-    console.log(num2);   
+    array2.push(num2);  
 }
+console.log(array2);
